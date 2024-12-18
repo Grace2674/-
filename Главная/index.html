@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Игрушек</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span class="letter S">Мир</span>
+            <span class="letter G">Игрушек</span>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-button" onclick="location.href='C:\\Users\\admin\\Desktop\\Мир игрушек\\Мир игрушек\\для мальчиков\\index.html'">Для мальчиков</button>
+                <button class="filter-button" onclick="location.href='C:\\Users\\admin\\Desktop\\Мир игрушек\\Мир игрушек\\Главная\\index.html'">Для девочек</button>
+            </div>
+            <div class="catalogs">
+                <select class="age-catalog">
+                    <option value="">Выберите возраст</option>
+                    <option value="0-3">0-3 года</option>
+                    <option value="4-7">4-7 лет</option>
+                    <option value="8-12">8-12 лет</option>
+                </select>
+                <select class="price-catalog">
+                    <option value="">Выберите цену</option>
+                    <option value="0-500">До 500 KZT</option>
+                    <option value="501-1000">501-1000 KZT</option>
+                    <option value="1001-2000">1001-2000 KZT</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-section">
+            <div class="product-grid">
+                <!-- Здесь все карточки товаров, как в вашем примере -->
+                <div class="product-section">
+                    <div class="product-grid">
+                        <div class="product-card" data-age="8-12" data-price="500">
+                            <img src="images (6).jpeg" alt="Игрушка 1">
+                            <h3>Игрушки Гарри Поттер</h3>
+                            <p>Цена: 500 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="501-1000">
+                            <img src="images (5).jpeg" alt="Игрушка 2">
+                            <h3>Сова Букля</h3>
+                            <p>Цена: 700 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 700)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="300">
+                            <img src="PMbSNYG1K9jVRRtG8J5YTmZRP1FOceTCLca7NmVwjqI=.jpeg" alt="Игрушка 3">
+                            <h3>Гермиона Грейнджер</h3>
+                            <p>Цена: 300 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 300)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="450">
+                            <img src="6l5lVa9I3iaTRsFvT2cTeWt2cKbxtaXniTTRRabV9nE=.jpeg" alt="Игрушка 4">
+                            <h3>Белатриса Лестрейндж</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 450)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="501-1000">
+                            <img src="CRYBABIES.png" alt="Игрушка 5">
+                            <h3>Маленький Пупс</h3>
+                            <p>Цена: 600 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 600)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="501-1000">
+                            <img src="24.jpg" alt="Игрушка 6">
+                            <h3>Мягкая игрушка кукла</h3>
+                            <p>Цена: 800 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 800)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="450">
+                            <img src="images (4).jpeg" alt="Игрушка 7">
+                            <h3>Куклы русалочки</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 450)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="1200">
+                            <img src="X0000026908.jpg" alt="Игрушка 8">
+                            <h3>Кукла Алиса</h3>
+                            <p>Цена: 1200 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 1200)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="501-1000">
+                            <img src="88499514_88499514.webp" alt="Игрушка 9">
+                            <h3>Baby Bon</h3>
+                            <p>Цена: 950 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 950)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="400">
+                            <img src="Без названия.jpeg" alt="Игрушка 10">
+                            <h3>Куклы Лол</h3>
+                            <p>Цена: 400 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 400)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="500">
+                            <img src="6149270510.jpg" alt="Игрушка 11">
+                            <h3>Питомец Кошка</h3>
+                            <p>Цена: 500 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="501-1000">
+                            <img src="208705526_w300_h300_igrushka-zuru-pets.webp" alt="Игрушка 12">
+                            <h3>Питомец Единорог</h3>
+                            <p>Цена: 700 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="300">
+                            <img src="1 (1).webp" alt="Игрушка 13">
+                            <h3>Майнкрафт фигурки</h3>
+                            <p>Цена: 300 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="4-7" data-price="450">
+                            <img src="S5011143576034b0fb398b55ce9c50002f.avif" alt="Игрушка 14">
+                            <h3>Конструктор Белоснежка</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="501-1000">
+                            <img src="images (3).jpeg" alt="Игрушка 15">
+                            <h3>Конструктор Стич</h3>
+                            <p>Цена: 600 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="501-1000">
+                            <img src="images (2).jpeg" alt="Игрушка 16">
+                            <h3>Мягкая игрушка аксолотль</h3>
+                            <p>Цена: 800 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="450">
+                            <img src="175194451_w220_h220_175194451.webp" alt="Игрушка 17">
+                            <h3>Набор Кухня</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="1200">
+                            <img src="600009026864b0.webp" alt="Игрушка 18">
+                            <h3>Гусь Обнимусь</h3>
+                            <p>Цена: 1200 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="501-1000">
+                            <img src="images (1).jpeg" alt="Игрушка 19">
+                            <h3>Волшебный кот</h3>
+                            <p>Цена: 950 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="400">
+                            <img src="images23111111111111111111.jpg" alt="Игрушка 20">
+                            <h3>Мягкая игрушка Зайчик</h3>
+                            <p>Цена: 400 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="500">
+                            <img src="650x650_cropped_b323f3c797b11275edad6c795872334c.jpeg" alt="Игрушка 21">
+                            <h3>Мягкая игрушка котенок</h3>
+                            <p>Цена: 500 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="501-1000">
+                            <img src="images.jpeg" alt="Игрушка 22">
+                            <h3>Мягкая игрушка кит</h3>
+                            <p>Цена: 700 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="300">
+                            <img src="j03zhjbmx7dapg1h5sr2awhuobfqxviu.jpg" alt="Игрушка 23">
+                            <h3>Кукла Братс</h3>
+                            <p>Цена: 300 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="450">
+                            <img src="ty_myagkaya_igrushka_puffies_pandasharik_s_rozushkami_10sm.webp" alt="Игрушка 24">
+                            <h3>Игрушка панда</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="600">
+                            <img src="myagkaya_igrushka_pusheen_s_piccei_1-500x500.jpg" alt="Игрушка 25">
+                            <h3>Мягкая игрушка котик с пиццей</h3>
+                            <p>Цена: 600 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="501-1000">
+                            <img src="176419542_igrushka-yajtso-rainbocorns.webp" alt="Игрушка 26">
+                            <h3>Питомец Зайчик</h3>
+                            <p>Цена: 800 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="450">
+                            <img src="1.webp" alt="Игрушка 27">
+                            <h3>Питомец Щеночек</h3>
+                            <p>Цена: 450 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="1200">
+                            <img src="6621635268.jpg" alt="Игрушка 28">
+                            <h3>Куроми</h3>
+                            <p>Цена: 1200 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="0-3" data-price="501-1000">
+                            <img src="fancy_podarochnaya_igrushkalenivec_40_sm.webp" alt="Игрушка 29">
+                            <h3>Ленивец</h3>
+                            <p>Цена: 950 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div>
+                        <div class="product-card" data-age="8-12" data-price="400">
+                            <img src="cXh5auf1djIlpqCHJDTp69UKtzdmKOHD7NOnQOTYSY8=.jpeg" alt="Игрушка 30">
+                            <h3>Единорог</h3>
+                            <p>Цена: 400 KZT</p>
+                            <button onclick="addToCart('Игрушка 1', 500)">Купить</button>
+                        </div><!-- Добавьте остальные игрушки аналогично -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h3>Корзина</h3>
+            <div class="cart-items" id="cartItems">
+                <!-- Здесь будут добавляться товары -->
+            </div>
+            <p>Итого: <span id="totalPrice">0</span> KZT</p>
+            <button onclick="checkout()">Оформить заказ</button>
+            <button onclick="clearCart()">Очистить корзину</button>
+        </div>
+
+        <!-- Модальное окно для оформления заказа -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Оформление заказа</h3>
+                <form id="orderForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="address">Адрес доставки:</label>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" required><br><br>
+                    <button type="submit">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Кнопка для открытия окна Личный кабинет -->
+        <div class="profile-button">
+            <button onclick="openProfileModal()">Личный кабинет</button>
+        </div>
+
+        <!-- Модальное окно Личного кабинета -->
+        <div id="profileModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeProfileModal()">&times;</span>
+                <h3>Личный кабинет</h3>
+
+                <!-- Форма для редактирования данных -->
+                <form id="profileForm">
+                    <label for="username">Имя:</label>
+                    <input type="text" id="username" name="username" value="Иван Иванов" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="ivan@example.com" required><br><br>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" value="+7 999 123 4567" required><br><br>
+                    <label for="karta">Номер карты:</label>
+                    <input type="text" id="karta" name="karta" value="1234 5678 9123 45" required><br><br>
+                    <button type="submit">Сохранить изменения</button>
+                </form>
+
+                <a href="c:\Users\Liza\Desktop\Мир игрушек\index.html" target="_blank">Выход из аккаунта</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span class="letter S">Мир</span><span class="letter G">Игрушек</span>
+        </div>
+        <div class="form-container" id="login-form">
+            <form action="/login" method="POST">
+                <input type="email" placeholder="Электронная почта" required maxlength="50">
+                <input type="password" placeholder="Пароль" required minlength="8" maxlength="20">
+                <button class="filter-button" onclick="location.href='C:\\Users\\Liza\\Desktop\\Мир игрушек\\для мальчиков\\index.html'">Войти</button>
+                <p>Нет аккаунта? <a href="#" id="go-to-register">Зарегистрироваться</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="register-form">
+            <form action="/register" method="POST">
+                <input type="email" placeholder="Электронная почта" required maxlength="50">
+                <input type="password" placeholder="Пароль" required minlength="8" maxlength="20">
+                <input type="password" placeholder="Подтвердите пароль" required minlength="8" maxlength="20">
+                <button class="filter-button" onclick="location.href='C:\\Users\\Liza\\Desktop\\Мир игрушек\\для мальчиков\\index.html'">Зарегистрироваться</button>
+                
+            
+                <p>Уже есть аккаунт? <a href="#" id="go-to-login">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Общие настройки */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://paradox-interior.ru/upload/catalog/item/281/oboi-rasch-232103.jpg'); 
+    color: #333; /* Темный текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер */
+.container {
+    width: 320px;
+    background-color: #fff; /* Белый фон контейнера */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    height: 480px; /* Высота для логотипа */
+}
+
+/* Логотип */
+.logo {
+    position: absolute;
+    top: 20px; /* Расстояние от верхнего края контейнера */
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование логотипа по горизонтали */
+    font-size: 48px; /* Размер логотипа */
+    font-weight: bold; /* Жирные буквы */
+    margin-bottom: 40px; /* Увеличение отступа снизу */
+}
+
+.letter {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.letter.S {
+    color: #ff6347; /* Помидорная красная буква S */
+}
+
+.letter.G {
+    color: #ffa500; /* Оранжевая буква G */
+    margin-left: -5px; /* Уменьшение расстояния между буквами */
+}
+
+/* Формы */
+.form-container {
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 40px); /* Уменьшение ширины */
+    left: 20px; /* Смещение */
+    top: 160px; /* Увеличение смещения вниз для размещения формы ниже */
+    transition: transform 0.5s ease;
+}
+
+
+/* Анимации переключения форм */
+#login-form {
+    transform: translateX(0);
+}
+
+#register-form {
+    transform: translateX(150%);
+}
+
+.show-register #login-form {
+    transform: translateX(-150%);
+}
+
+.show-register #register-form {
+    transform: translateX(0);
+}
+
+/* Ввод данных */
+input {
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc; /* Светлая рамка */
+    border-radius: 4px;
+    background-color: #e6f7ff; /* Светло-голубой фон */
+    color: #333; /* Темный текст */
+    width: 100%;
+    max-width: 270px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #ff6347; /* Красный акцент */
+    outline: none;
+}
+
+/* Кнопки */
+button {
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ff6347; /* Красная кнопка */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500; /* Более темный оттенок красного */
+}
+
+/* Текст под формой */
+p {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Ссылки */
+a {
+    color: #ff6347; /* Красный акцент */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
